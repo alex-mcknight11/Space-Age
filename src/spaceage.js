@@ -30,3 +30,13 @@ $('.lifeInSpace').text(
 		ageMercury +
 		"if you lived on Mercury. It's a good thing you don't live in any of those places!"
 );
+
+const ageInput = this.age;
+if (this.age < 80) {
+	let ageDifference = 80 - this.age;
+	$('.deathInSpace').text(
+		'You have lived' +
+			ageDifference +
+			'years past the average American life expectancy. Technology is amazing!'
+	);
+}
