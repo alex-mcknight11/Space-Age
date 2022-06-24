@@ -12,4 +12,9 @@ describe('AgeCalculator', () => {
 		expect(ageJupiter).toBeCloseTo(2.1079, 3);
 	});
 
+	test('should calculate age based on Mars equation', () => {
+		const ageMars = space.ageMars();
+		expect(ageMars).toBeCloseTo(13.2978, 3);
+	});
+
 });
