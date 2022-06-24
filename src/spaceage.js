@@ -1,5 +1,8 @@
 import $ from 'jquery';
 import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './src/css/styles.css';
+import userAge from "./src/index.html";
 
 export default class AgeCalculator {
 	constructor(age) {
