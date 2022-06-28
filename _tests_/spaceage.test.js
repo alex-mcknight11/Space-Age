@@ -1,5 +1,5 @@
 import { TestScheduler } from 'jest';
-import AgeCalculator from '../src/space.js';
+import AgeCalculator from '../src/spaceage.js';
 
 beforeEach(function () {
 	let userInput = [25];
@@ -27,9 +27,9 @@ describe('AgeCalculator', () => {
 		expect(ageMercury).toBeCloseTo(104.1666, 3);
 	});
 	test(
-		'should calculate how many years past median age they would live on a planet', () => {
-      const ageDifference = (this.age < 80);
-      expect(ageDifference).toEqual(this.age < 80);
-	);
+		'should calculate how many years past median age they would live on Jupiter', () => {
+      const ageDifferenceJupiter = space.ageDifferenceJupiter();
+      expect(ageDifferenceJupiter).toBeCloseTo(-4.637);
+		});
   
 });
