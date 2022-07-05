@@ -31,5 +31,20 @@ describe('AgeCalculator', () => {
       const ageDifferenceJupiter = space.ageDifferenceJupiter();
       expect(ageDifferenceJupiter).toBeCloseTo(-4.637);
 		});
+	test(
+		'should calculate how many years past median age they would live on Mars', () => {
+			const ageDifferenceMars = space.ageDifferenceMars();
+			expect(ageDifferenceMars).toBeCloseTo(-29.255);
+		});
+	test(
+		'should calculate how many years past median age they would live on Venus', () => {
+			const ageDifferenceVenus = space.ageDifferenceVenus();
+			expect(ageDifferenceVenus).toBeCloseTo(-88.709);
+		});
+	test(
+		'should calculate how many years past median age they would live on Mercury', () => {
+			const ageDifferenceMercury = space.ageDifferenceMercury();
+			expect(ageDifferenceMercury).toBeCloseTo(-229.166);
+		});
   
 });
